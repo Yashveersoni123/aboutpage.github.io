@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>about</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="about_style.css" />
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <h1 id="myportfolio">MyPortfolio</h1>
+      <div class="nav_bar1" id="myTopnav">
+        <i class="fa-solid fa-moon" onclick="dark()"></i>
+        <a
+          href="https://yashveersoni123.github.io/homepage.github.io/"
+          class="menu"
+        >
+          Home</a
+        >
+        <a
+          href="https://yashveersoni123.github.io/skillpage.github.io/"
+          class="menu1"
+        >
+          Skills</a
+        >
+        <a
+          href="https://yashveersoni123.github.io/projectpage.github.io/"
+          class="menu2"
+        >
+          Projects</a
+        >
+        <a
+          href="https://yashveersoni123.github.io/aboutpage.github.io/"
+          class="menu3"
+        >
+          About</a
+        >
+      </div>
+      <i class="fa-solid fa-bars" onclick="myFunction()"></i>
+    </nav>
+    <div class="container">
+      <div class="container1">
+        <div class="img-section">
+          <img src="Group 12 (2).png" id="img1" alt="" srcset="" />
+        </div>
+        <div id="para1">
+          <h1>Yashveer Soni</h1>
+          <h3>
+            I am a web designer and I make beautifull website. I like web
+            designing.
+          </h3>
+        </div>
+        <div id="para2">
+          <h1>General Info</h1>
+          <div class="para3">
+            <ul id="dob">
+              <div class="dob1">
+                <li><h3>DOB</h3></li>
+                <li><h5>Sep 4, 2004</h5></li>
+              </div>
+            </ul>
+            <ul id="adderess">
+              <div class="adderess1">
+                <li><h3>Adderess</h3></li>
+                <li><h5>182/35 18 Sec Pratapnagar, Jaipur</h5></li>
+              </div>
+            </ul>
+            <ul id="email">
+              <div class="email1">
+                <li><h3>Email</h3></li>
+                <li><h5>Yashveersoni12345@gmail.com</h5></li>
+              </div>
+            </ul>
+            <ul id="phone">
+              <div class="phone1">
+                <li><h3>Phone</h3></li>
+                <li><h5>9414753083</h5></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="subcontainer">
+        <img src="Group 12 (2).png" id="img" alt="" srcset="" />
+      </div>
+    </div>
+  </body>
+  <script>
+    function dark() {
+      document.body.classList.toggle("dark-theme");
+    }
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "nav_bar1") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav_bar1";
+      }
+    }
+  </script>
+</html>
